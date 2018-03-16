@@ -1,0 +1,25 @@
+{
+	"berita": [
+		{
+			"id" : "1",
+			"judul" : "Harga Baygon naik lagi!",
+			"thumbnail" : "img/baygon.jpg",
+			"headline" : "sagardon",
+			"isi" : "Harga baygon naek lagi. trus ada kucing tetangga mokad kena sambel pedes. Selain itu, ada orang kebelet makan itu sambel. <br>Tetapi jangan khawatir! Di sini Anda masih bisa membeli Baygon dengan harga yang lebih murah!"
+		},
+		{
+			"id" : "2",
+			"judul" : "Harga Baygon naik lagi!",
+			"thumbnail" : "img/baju2.jpg",
+			"headline" : "sagardon",
+			"isi" : "Ini berita yang sama tapi versi 2."
+		},
+		{
+			"id" : "3",
+			"judul" : "Harga Baygon naik lagi!",
+			"thumbnail" : "img/baju1.jpg",
+			"headline" : "sagardon",
+			"isi" : "Yang ini versi 3."
+		}
+	]
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TokoKita Login</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+	<link rel="stylesheet" type="text/css" href="css/login atau register.css">
+
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!-- Get JSON-->
+	<script>
+	$(document).ready(function(){
+	   $.getJSON("pelanggan.json", function(result){
+	        $.each(result.pelanggan, function(i, field){
+	            $("#u").attr('value',this.username + " ");
+	            $("#pwd").attr('value',this.password + " ");
+	        });
+	    });
+	});
+	</script>
+	<!-- end of get JSON-->
+</head>
+
+<body>
+	<div class ="container-fluid">
+		<div class="row">
+			<div class="col-lg-2">
+			</div>
+			<div class="col-lg-8">
+				<!-- Judul -->
+				<h3 class="text-center judul1"> TokoKita </h3>
+				<h1 class="text-center judul2"> Silahkan Masuk </h1>
+				<p class="text-center judul3"> Belum Punya Akun? Daftar <a href="register.html">di sini </a></p>
+				<!-- end Judul-->
+
+				<!-- form login -->
+				<h3 style="margin-top: 150px; text-align: center;"> Login </h3>
+				<form action="">
+					<div class="form-group">
+					<p style=""> Username </p>
+					<input type="text" id="u" style="width: 100%; margin-top: -50px;" required></input>
+					</div>
+					<div class="form-group">
+					<p style="margin-top: 20px"> Pasword </p>
+					<input type="password" id="pwd" style="width: 100%; margin-top:-50px" required></input>
+					</div>
+					<a class="alert alert-success btn btnDA" onclick="window.location.href='home.html'">Masuk</a>
+				</form>
+			</div>
+			<!-- end form login-->
+			
+			<div class="col-lg-2">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 regist">													
+			</div>
+
+			<div class="col-lg-3">
+			</div>
+		</div>
+	</div>
+</body>
+</html>

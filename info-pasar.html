@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Info TokoKita </title>
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	
+	<script src = "js/bootstrap.js"></script>
+	<script src="jqnewsTicker-master/js/newsTicker.js"></script>
+
+</head>
+<body style="background-color: darkblue">
+	<div class="container" style="background-color: blue">
+	
+		<!-- tombol profil dan login -->
+		<div class="fixed-top" align="right" style="margin-top: 200px">
+			<a href="#user">
+				<img src="img/user.png" class="img-thumbnail" style="width: 64px; height: 64px; margin-top: -100px" onclick="window.location.href='profil.html'">
+			</a>
+		</div>
+		<div class="fixed-top" align="right" style="margin-top: 200px">
+			<a href="#masuk">
+				<img src="img/menu.png" class="img-thumbnail" style="width: 64px; height: 64px; margin-top: 10px" onclick="window.location.href='login.html'">
+			</a>
+		</div>
+		<!-- end of tombol profil dan login-->
+		
+		<!-- Header -->
+		<div class="header" style="background-color: #82B1FF">
+			<div class="row" style="padding-top: 20px; padding-left: 10px">
+				<div class="col-lg-8">
+					<div class="btn-group btn-group-lg">
+						<button class="btn btn-primary" onclick="window.location.href='home.html'">Home</button>
+						<button class="btn btn-primary" onclick="window.location.href='barang.html'">Barang</button>
+						<button class="btn btn-primary active" onclick="window.location.href='info-pasar.html'">Info Pasar</button>
+						<button class="btn btn-primary" onclick="window.location.href='about us.html'">Tentang Kami</button>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<h1>TokoKita</h1>
+				</div>
+			</div>
+		</div>
+		<!-- end of header -->
+
+		<!-- welcome -->
+		<div class="row">
+			<div class="col-lg-4 tengah" style="margin-top: 10px; height: 20px">
+			<script>
+				$(function () {
+					$('#newsList').newsTicker();
+				});
+			</script>
+				<div id="newsData" class="row welcome">
+				<ul id="newsList">
+						<li class="news-item" style="text-align: center"><h3>Selamat Datang</h3></li>
+						<li class="news-item" >Terima kasih telah mengunjungi website kami</li>
+				</ul>
+				</div>
+			</div>
+		</div>
+		<!-- end of welcome -->
+
+		<!-- Iklan -->
+		<div class="row" style="margin-top: 20px">
+			<div class="col-lg-12">
+			<div id="iklan" class="carousel slide" data-ride="carousel" align="center">
+				<ol class="carousel-indicators">
+					<li data-target="#iklan" data-slide-to="0" class="active"></li>
+					<li data-target="#iklan" data-slide-to="1"></li>
+					<li data-target="#iklan" data-slide-to="2"></li>
+				</ol>
+
+				<div class="carousel-inner" role="listbox" style="height: 300px">
+					<div class="carousel-item active">
+						<img src="img/baju1.jpg" alt="baju1">
+						<div class="carousel-caption">
+							<h3>Baju 1</h3>
+							<p>lorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/baju2.jpg" alt="baju2">
+						<div class="carousel-caption">
+							<h3>Baju 2</h3>
+							<p>lorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/baju3.jpg" alt="baju3">
+						<div class="carousel-caption">
+							<h3>Baju 3</h3>
+							<p>lorem ipsum dolor sit amet</p>
+						</div>
+					</div>
+				</div>
+
+				<a class="carousel-control-prev left" href="#iklan" data-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</a>
+				<a class="carousel-control-next right" href="#iklan" data-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</a>
+
+			</div>
+			</div>
+		</div>
+		<!-- end of iklan -->
+
+		<!-- posts -->
+		<div class="container" style="background-color: #82B1FF">
+		<br>
+		<div id="judul">
+		<h1>Info Pasar</h1>
+		</div>
+		<br>
+		<div class="links">
+	
+			<div class="row">
+				<div class="col-lg-11 post">
+					<div class="media">
+						<div class="media-left media-middle">
+						   	<img src="img/baygon.jpg" class="img-responsive img-thumbnail" style="height: 150px">
+						</div>
+						<div class="media-body">
+							<h3><a href="berita.html?a=1">Harga Baygon naik lagi!</a></h3>
+							<p>sagardon</p>
+						</div>
+					</div>
+			    </div>
+		    </div>
+
+			<div class="row ">
+				<div class="col-lg-11 post">
+					<div class="media">
+						<div class="media-left media-middle">
+						   	<img src="img/baygon.jpg" class="img-responsive img-thumbnail" style="height: 150px">
+						</div>
+						<div class="media-body">
+							<h3><a href="berita.html?a=2">Harga Baygon naik lagi!</a></h3>
+							<p>sagardon</p>
+						</div>
+					</div>
+			    </div>
+		    </div>
+
+			<div class="row ">
+				<div class="col-lg-11 post">
+					<div class="media">
+						<div class="media-left media-middle">
+						   	<img src="img/baygon.jpg" class="img-responsive img-thumbnail" style="height: 150px">
+						</div>
+						<div class="media-body">
+							<h3><a href="berita.html?a=3">Harga Baygon naik lagi!</a></h3>
+							<p>sagardon</p>
+						</div>
+					</div>
+			    </div>
+		    </div>
+		</div>
+		<br>
+		</div>
+		<!-- end of posts -->
+
+
+		<!-- Footer -->
+		<div style="height: 100px">
+			
+		</div>
+		<div class="footer" style="background-color: #82B1FF" align="center">
+			<h2>TokoKami</h2>
+			<p>~ Informatika Bisa! ~</p>
+			<p>Copyright 2018. All rights reserved. Design by Kelompok 13</p>
+		</div>
+	</div>
+
+</body>
+	<style type="text/css">
+		.tengah{
+			float: none;
+			margin: 0 auto; 
+		}
+		.post{
+			padding: 15px; 
+			height: 180px;
+			background-color: black;
+			color: white;
+			float: none;
+			margin: 0 auto; 
+			margin-bottom: 10px;
+		}
+		.media-body{
+			padding-top: 30px;
+			padding-left: 30px;
+		}
+		.affix-top {
+		    /* Initial items */
+		}
+
+		.affix {
+		    top:50px;
+		    right:0;
+		    position:fixed;
+		}
+		.welcome{
+			background-color: white;
+			border-radius: 2px;
+			height: 35px;
+			text-align: center;
+			padding: 2px;
+		}
+		.links{
+			position: relative;
+		}
+		a{
+			color: white;
+		}
+	</style>
+</html>
